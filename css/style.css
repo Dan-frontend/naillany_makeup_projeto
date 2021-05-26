@@ -1,0 +1,621 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Courgette";
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	max-width: 1400px;
+	width: 100%;
+	margin:0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	min-height: 800px;
+	padding:40px 2%;
+	font-size: 20px;
+	/*max-height: 700px;*/
+	background-size: cover;
+	background-position: center;
+	background-image: url(../images/header.png);
+	font-weight: 300;
+	overflow: hidden;
+}
+
+header nav{
+	float: right;
+}
+
+nav.mobile-menu{
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+}
+
+/*
+nav.mobile-menu:hover ul{
+	opacity: 1;
+}
+*/
+
+nav.mobile-menu ul{
+	display: none;
+	/*transition: 1s;*/
+	background-color: #ffe7ea;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.mobile-menu ul li{
+	padding:8px 0;
+	transition: 0.4s;
+	/*border-bottom: 1px solid black*/;
+}
+
+nav.mobile-menu ul li:hover{
+	background-color: rgb(230,230,230);
+}
+
+nav.mobile-menu ul li a{
+	color: #d36fa4;
+	display: block;
+	text-decoration: none;
+}
+
+header nav.desktop-menu ul{
+	list-style-type: none;
+}
+
+header nav.desktop-menu li{
+	float: left;
+	padding:0 20px;
+}
+
+header nav.desktop-menu li a{
+	text-decoration: none;
+	color: white;
+}
+
+.parte1{
+	float: right;
+	width: 70%;
+	padding: 150px 0px 20px 0;
+	margin-top: 50px;
+	/*background-color: ivory;*/
+}
+
+.logo{
+	float: right;
+	max-width: 600px;
+	padding-right: 130px;
+	/*background-color: lawngreen;*/
+}
+
+.sobre-logo{
+	float: right;
+	width: 100%;
+	/*background-color: lightseagreen;*/
+}
+
+.wraper-logo{
+	float: right;
+	/*background-color: maroon;*/
+}
+
+.sobre-logo h2{
+	font-size: 80px;
+	color: white;
+	font-weight: normal;
+}
+
+.sobre-logo p{
+	font-size: 35px;
+	line-height: 24px;
+	color: white;
+	float: right;
+	padding-left: 220px;
+}
+
+.sobre-logo .img-logo{
+	float: left;
+	width: 120px;
+	height: 120px;
+	border-radius: 40px;
+	background-image: url(../images/circle.jpg);
+	background-size: cover;
+	background-color: transparent;
+}
+
+
+.img-autor{
+	position: relative;
+	top: 200px;
+	left: 130px;
+	width: 250px;
+	height: 250px;
+	border-radius: 40px;
+	background-image: url(../images/img-autor.jpg);
+	background-position: center;
+	background-size: 400px; 
+	
+}
+
+section.perfil-container{
+	padding: 40px 0;
+	background-color: #ffe7ea;
+	/*background-color: lawngreen;*/
+}
+
+section.perfil-container .container{
+	max-width: 800px;
+	/*background-color: lightcoral;*/
+}
+
+section.perfil-container .perfil-wraper{
+	padding-top: 60%;
+	position: relative;	
+	/*background-color: lightskyblue;*/
+}
+
+section.perfil-container .perfil-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding-left: 2%;
+	/*background-color: rgb(250, 135, 189);*/
+}
+
+section.perfil-container .img-perfil{
+	width: 40%;
+	height: 100%;
+	background-image: url(../images/foto_capa.jpeg);
+	background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+	width: 60%;
+	padding: 0 30px;
+}
+
+section.perfil-container .texto-perfil h2{
+	color: #d36fa4;
+	font-size: 35px;
+
+}
+
+section.perfil-container .texto-perfil p{
+	color: #4b4b4b;
+	margin-top: 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+section.servicos{
+	padding: 70px 0;
+	background-color: #ffe7ea;
+}
+
+section.servicos .container{
+	padding: 20px;
+}
+
+section.servicos .servico-container{
+	margin-top: 30px;
+	text-align: center;
+	
+}
+
+section.servicos .servico-single{
+	float: left;
+	width: 33.3%;
+	/*background-color: lightseagreen;*/
+}
+
+section.servicos h2{
+	color: #d36fa4;
+	font-size: 35px;
+	text-align: center;
+}
+
+section.servicos .servico-single ul{
+	list-style-position: inside;
+}
+
+section.servicos .servico-single li{
+	list-style: none;
+	margin-top: 15px;
+	color: #4b4b4b;
+}
+
+section.galeria{
+	padding: 70px 0;
+	background-color: #ffe7ea;
+}
+
+section.galeria h2{
+	color: #d36fa4;
+	font-size: 35px;
+	text-align: center;
+}
+
+section.galeria .container{
+	padding: 20px;
+}
+
+section .galeria-container{
+	padding: 50px;
+	/*background-color: lawngreen;*/
+}
+
+section.galeria .nav-galeria-wraper{
+	/*background-color: lightseagreen;*/
+	max-width: 1280px;
+	margin-left: 1%;
+}
+
+section.galeria .nav-galeria-wraper a img{
+	max-width: 100%;
+	width: 280px;
+	height: 350px;
+	object-fit: cover;
+	/*
+	cursor: pointer;
+	padding-top:20%;
+	background-position: center;
+	background-size: cover;
+	/*background-color:green;*/
+}
+
+section.galeria .nav-galeria-wraper2 a img{
+	max-width: 100%;
+	width: 198px;
+	height: 198px;
+	object-fit: cover;
+	margin-top: 10px;
+	/*
+	cursor: pointer;
+	padding-top:20%;
+	background-position: center;
+	background-size: cover;
+	/*background-color:green;*/
+}
+
+.instagram-chamada{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding:40px 0;;
+}
+
+.instagram-chamada p{
+	line-height: 23px;
+	color: #4b4b4b;
+	padding:10px 0;
+	font-size: 13px;
+}
+
+.instagram-chamada a > img{
+	border-radius: 100%;
+	width: 110px;
+	height: 110px;
+}
+
+footer .container{
+	max-width: 1100px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+footer{
+	padding:40px 2%;
+	background-color: #d36fa4;
+}
+
+footer .button-whatsapp{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	bottom: 40px;
+	right: 10px;
+	background-color: #d36fa4;
+	color: white;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 1px 1px #888;
+	z-index: 1000;
+	
+}
+
+.footer-block h2{
+	color: #ffe7ea;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top:8px;
+	color: #ffe7ea;
+	font-size: 14px;
+}
+
+
+@media screen and (max-width: 1080px){
+	/*section.galeria .mini-img-wraper{
+		width:33.3%;
+		float: left;
+		text-align: center;
+		cursor: pointer;
+		padding-top:20%;
+		border: 1px solid #ffe7ea;
+		background-position: center;
+		background-size: cover;
+		/*background-color:green;
+		background-image: url(../images/circle.jpg);
+	}
+
+	section.galeria .mini-img-wraper:last-child{
+		display: none;
+	}
+
+	section.galeria .mini-img-wraper2{
+		width:20%;
+		float: left;
+		text-align: center;
+		cursor: pointer;
+		padding-top:20%;
+		border: 1px solid #ffe7ea;
+		background-position: center;
+		background-size: cover;
+		/*background-color:green;
+		background-image: url(../images/circle.jpg);
+	}
+
+	section.galeria .mini-img-wraper2:last-child{
+		display: none;
+	}
+	
+}*/
+
+@media screen and (max-width: 910px){
+
+	.parte1{
+		float: none;
+		width: 100%;
+		padding: 150px 0px 20px 0;
+		margin-top: 50px;
+		/*background-color: ivory;*/
+	}
+			
+	.wraper-logo{
+		float: right;
+		/*background-color: maroon;*/
+	}
+	
+	.sobre-logo h2{
+		font-size: 80px;
+		color: white;
+		font-weight: normal;
+	}
+	
+	.sobre-logo p{
+		font-size: 35px;
+		color: white;
+		float: right;
+		padding-left: 220px;
+	}
+	
+	.sobre-logo .img-logo{
+		display: none;
+		float: left;
+		width: 120px;
+		height: 120px;
+		border-radius: 40px;
+		background-image: url(../images/circle.jpg);
+		background-size: cover;
+		background-color: transparent;
+	}
+	
+	
+	.img-autor{
+		position: relative;
+		top: 200px;
+		left: 45px;
+		width: 250px;
+		height: 250px;
+		border-radius: 40px;
+		background-image: url(../images/img-autor.jpg);
+		background-position: center;
+		background-size: 400px; 
+		
+	}
+
+	@media screen and (max-width: 850px){
+
+		section.perfil-container .perfil-wraper{
+			padding-top: 0;
+		}
+
+		section.perfil-container .perfil-wraper2{
+			/*
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height:100%;
+			*/
+			height: auto;
+			position: static;
+			text-align: center;
+			display: inline-block;
+			/*flex-direction: column;*/
+		}
+
+		section.perfil-container .img-perfil{
+		width: 50%;
+		padding-top:70%;
+		display: inline-block;
+		height: auto;
+		/*
+		background-image: url('../imagens/img_perfil.png');
+		background-size: 100% 100%;
+		*/
+		}
+
+		section.perfil-container .texto-perfil{
+			display: inline-block;
+			text-align: justify;
+			width: 100%;
+			padding:80px 30px 30px 30px;
+		}
+}
+
+	@media screen and (max-width: 768px){
+
+		header{
+			width: 100%;
+			height: auto;
+			min-height: 90vh;
+			padding: 40px 2%;
+		}
+
+		nav.desktop-menu{
+			display: none;
+		}
+
+		nav.mobile-menu{
+			display: block;
+		}
+
+		.img-autor{
+			display: none;
+			position: relative;
+			top: 200px;
+			left: 130px;
+			width: 250px;
+			height: 250px;
+			border-radius: 40px;
+			background-image: url(../images/img-autor.jpg);
+			background-position: center;
+			background-size: 400px; 			
+		}
+
+		/*section.galeria .mini-img-wraper{
+			width:50%;
+			height: 180px;
+			float: left;
+			text-align: center;
+			cursor: pointer;
+			padding-top:20%;
+			margin-top: 5px;
+			border: 1px solid #ffe7ea;
+			background-position: center;
+			background-size: cover;
+			/*background-color:green;
+			background-image: url(../images/circle.jpg);
+		}
+	
+		section.galeria .mini-img-wraper:last-child{
+			display: inline-block;
+		}*/
+
+		footer{
+		text-align: center;
+		}
+
+		footer .button-whatsapp{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	bottom: 40px;
+	right: 1%px;
+	background-color: #d36fa4;
+	color: white;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 20px;
+	box-shadow: 1px 1px #888;
+	z-index: 1000;
+	
+}
+	
+		footer .footer-block{
+		float: none;
+		width: 100%;
+		margin:30px 0;
+		}
+		
+	}
+		@media screen and (max-width: 580px){
+			.sobre-logo h2{
+				text-align: center;
+				position: relative;
+				left: 153px;
+			}
+
+			section.perfil-container .texto-perfil h2{
+				text-align: center;
+				padding-top: 10px;
+			}
+
+			
+		section.servicos .servico-single{
+			float: none;
+			width: 100%;
+			margin-top: 24px;
+			/*background-color: lightseagreen;*/
+			}
+
+			/*section.galeria .mini-img-wraper{
+				width:100%;
+				height: 180px;
+				cursor: pointer;
+				padding-top:20%;
+				margin-top: 5px;
+				border: 1px solid #ffe7ea;
+				background-position: center;
+				background-size: cover;
+				/*background-color:green;
+				background-image: url(../images/circle.jpg);
+			}
+		
+			section.galeria .mini-img-wraper:last-child{
+				display: inline-block;
+			}*/
+
+			@media screen and (max-width: 580px){
+				
+				section.perfil-container .img-perfil{
+					width: 80%;
+					padding-top:110%;
+				}
+		}
